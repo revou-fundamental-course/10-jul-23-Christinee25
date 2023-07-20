@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI || Oleh:Christine</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>Kalkulator BMI</h1>
+            <div class="jk">
+            <strong>Jenis Kelamin</strong>
+                <div class="pria">
+                    <input type="radio" name="r1" id="m">Pria
+                </div>
+                <div class="wanita">
+                    <input type="radio" name="r1" id="f">Wanita
+                </div>
+            </div>
+            <div class="age">
+                <label for="age">Age</label><br>
+                <input type="text" id="age">
+            </div>
+            </div>
+            <div class="parameter">
+                <div class="height">
+                    <label for="height">Tinggi Badan(cm)</label><br>
+                    <input type="text" id="height">
+                </div>
+                <div class="weight">
+                    <label for="weight">Berat Badan(kg)</label><br>
+                    <input type="text" id="weight">
+                </div>
+            </div>
+            <p class="error"></p>
+            <div class="btn">
+                <button id="calculatebtn" class="calbtn" onclick="calculate()">Calculate BMI</button>
+            </div>
+            <div class="result">
+                <div id="result"></div>
+                <p class="comment"></p>
+              </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
